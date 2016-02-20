@@ -1,0 +1,8 @@
+name: picosite
+home: http://github.com/luebken/picosite
+version: 0.1.0
+description: Simple web service
+maintainers:
+- Your name <email@address>
+details: |-
+  Look at the source

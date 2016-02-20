@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: picosite
+  labels:
+    app: picosite
+spec:
+  replicas: 1
+  selector:
+    app: picosite
+  template:
+    metadata:
+      labels:
+        app: picosite
+    spec:
+      containers:
+        - name: picosite
+          image: luebken/picosite:latest
+          ports:
+            - name: http-server
+              containerPort: 80
